@@ -173,7 +173,7 @@ fn encode_token_append(data: &mut Vec<Word>, token: &Token) {
 			}
 			data.push(value);
 		}
-		_ => panic!("Unhandled nested token: {:?}", token),
+		_ => (), // don't panic 
 	};
 }
 
